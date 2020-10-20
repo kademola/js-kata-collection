@@ -1,32 +1,32 @@
-function add(a, b) {
+function getAdd(a, b) {
   return a + b;
 }
 
-function multiply(a, b) {
-  let i = 0;
+function getMultiply(a, b) {
+  let x = 0;
   let mul = 0;
-  while (i < b) {
-    mul = add(a, mul);
-    i++;
+  while (x < b) {
+    mul = getAdd(a, mul);
+    x++;
   }
   return mul;
 }
 
-function power(a, b) {
-  let i = 0;
+function finPower(a, b) {
+  let y = 0;
   let pow = 1;
-  while (i < b) {
-    pow = multiply(a, pow);
-    i++;
+  while (y < b) {
+    pow = getMultiply(a, pow);
+    y++;
   }
   return pow;
 }
 
-function factorial(a) {
+function findFactorial(a) {
   let result = a;
   while (a > 1) {
     a--;
-    result = multiply(a, result);
+    result = getMultiply(a, result);
   }
   return result;
 }
@@ -39,13 +39,13 @@ function fibonacci(a) {
   let f1 = 0,
     f2 = 1,
     sum,
-    i = 2;
+    z = 2;
 
-  while (i < a) {
-    sum = add(f1, f2);
+  while (z < a) {
+    sum = getAdd(f1, f2);
     f1 = f2;
     f2 = sum;
-    i++;
+    z++;
   }
   return f2;
 }
