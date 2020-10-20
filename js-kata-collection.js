@@ -31,7 +31,7 @@ function findFactorial(a) {
   return result;
 }
 
-function fibonacci(a) {
+function findFibonacci(a) {
   if (a == 1) return 0;
 
   if (a === 2) return 1;
